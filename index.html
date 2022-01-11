@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booki</title>
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/app.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/research.css">
+  <link rel="stylesheet" href="src/css/filters.css">
+  <link rel="stylesheet" href="src/css/accomodation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  
+</head>
+<body>
+
+  <!-- En tête -->
+  <header>
+    <img class="header-logo" src="src/images/logo/Booki@3x.png" alt="Logo Booki">
+    
+    <!-- Menu de navigation -->
+    <nav class="header-nav">
+      <ul class="header-nav-items">
+        <li class="header-nav-items__item"><a href="#">Hébergements</a></li>
+        <li class="header-nav-items__item"><a href="#">Activités</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+
+    <!-- Section recherche -->
+    <section class="research">
+      <div class="research-title">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+      <form class="research-form" action="#">
+        <div class="research-form-box">
+          <div class="research-form-box__map">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="research-form-box__input">
+            <input type="research" value="Marseille, France">
+          </div>
+          <button class="research-form-box__button">
+            <i class="fas fa-search"></i>
+            <p>Rechercher</p>
+          </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Section filtres -->
+    <section class="filters">
+      <ul>
+        <h3 class="filters-title">Filtres</h3>
+        <li class="filters-box">
+          <div class="filters-box__icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <div class="filters-box__title">
+            <p>Économique</p>
+          </div>  
+        </li>
+        <li class="filters-box">
+          <div class="filters-box__icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="filters-box__title">
+            <p>Familial</p>
+          </div>  
+        </li>
+        <li class="filters-box">
+          <div class="filters-box__icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="filters-box__title">
+            <p>Romantique</p>
+          </div>  
+        </li>
+        <li class="filters-box">
+          <div class="filters-box__icon">
+            <i class="fas fa-dog"></i>
+          </div>
+          <div class="filters-box__title">
+            <p>Animaux autorisés</p>
+          </div>  
+        </li>
+      </ul>
+      <div class="filters-result">
+        <div class="filters-result__icon">
+          <i class="fas fa-info"></i>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
+
+    <!-- Section Hébergements -->
+    <section class="accomodation">
+      <div class="accomodation-all">
+        <div class="accomodation-all-card">
+          <picture class="accomodation-all-card__image">
+            <source srcset="src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 993px)">
+            <source srcset="src/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 769px)">
+            <img src="src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
+          </picture>
+          <div class="accomodation-all-card-infos">
+            <div>
+              <h4 class="accomodation-all-card-infos__title">Auberge La Cannebière</h4>
+            </div>
+            <div>
+              <p class="accomodation-all-card-infos__price">Nuit à partir de 25€</p>
+            </div>
+            <div class="accomodation-all-card-infos__note">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+         
+        </div>
+
+
+
+
+
+        <div class="accomodation-all-card">
+          <picture class="accomodation-all-card__image">
+            <source srcset="src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 993px)">
+            <source srcset="src/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 769px)">
+            <img src="src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
+          </picture> 
+        </div>
+        <div class="accomodation-all-card">
+          <picture class="accomodation-all-card__image">
+            <source srcset="src/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 993px)">
+            <source srcset="src/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    media="(min-width: 769px)">
+            <img src="src/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
+          </picture>
+        </div>
+      </div>
+      <div class="accomodation-mostpopular">
+      </div>
+    </section>
+
+
+  </main>
+</body>
+</html>

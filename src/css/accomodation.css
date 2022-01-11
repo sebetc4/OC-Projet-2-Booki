@@ -1,0 +1,75 @@
+.accomodation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accomodation-all {
+  width: 64%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: var(--light-grey);
+  display: flex;
+}
+
+.accomodation-all-card {
+  margin: 10px 2% 10px 2%;
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 32%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.accomodation-all-card__image img {
+  width: 100%;
+  height: 120px;
+  border-radius: 25px 25px 0 0px;
+  padding: 2%;
+  object-fit: cover;
+}
+
+.accomodation-all-card-infos {
+  height: 66px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accomodation-all-card-infos__title {
+  margin: 0;
+  padding: 0;
+}
+
+.accomodation-all-card-infos__price {
+  margin: 0;
+  font-size: 13px;
+  padding: 0;
+}
+
+.accomodation-all-card-infos__note {
+  margin: 0;
+  padding: 0;
+}
+
+.accomodation-all-card-infos__note i {
+  font-size: 13px;
+}
+
+.accomodation-mostpopular {
+  width: 33%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: var(--light-grey);
+  display: flex;
+}
+
+
+/* 
+@media(max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+} 
+*/
