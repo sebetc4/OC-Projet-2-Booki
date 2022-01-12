@@ -1,32 +1,32 @@
-.filters ul {
-  padding: 0;
+.filters-bar {
+  margin-top: 20px;  
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.filters-title {
-  margin: 10px 10px 10px 0px;
+.filters-bar__title {
+  margin-right: 35px;
 }
 
- .btn-grad:hover {
-   color: #fff;
-   text-decoration: none;
- }
+.filters ul{
+  margin: 0;
+  padding: 0;
+}
 
-
-.filters-box {
-  cursor: pointer;
+.filter-box {
+  height: 50px; 
+  margin: 0 20px 0 0;
   display: inline-flex;
   align-items: center;
-  height: 50px;
   border: 2px solid var(--dark-grey);
   border-radius: 25px;
-  margin: 10px;
+  cursor: pointer;
+
+  /* Annimation */
   background-size: 200% auto;
-  background-position: right center;
   background-image: linear-gradient(
-    to left, 
+    to right, 
      var(--white) 0%,
      var(--white)  51%, 
      var(--light-blue)  100%);
@@ -36,74 +36,71 @@
     background-position 0.3s;
 }
 
-.filters-box:hover {
+.filter-box:hover {
   transform: scale(1.1);
-  background-position: left center;
   border: 2px solid var(--dark-blue);
+  background-position: right center;
 }
 
-.filters-box__icon {
+.filter-box__icon {
   margin-left: -4px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-blue);
-  width: 50px;
-  height: 50px;
   border-radius: 25px;
+  background-color: var(--light-blue);
 }
 
-.filters-box__icon i {
+.filter-box__icon i {
   color: var(--dark-blue);
 }
 
-.filters-box__title {
+.filter-box__title {
   padding: 0 15px 0px 10px; 
   font-weight: bold;
 }
 
 .filters-result {
+  margin-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .filters-result__icon{
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
   border: 1px solid var(--dark-grey);
   border-radius: 50%;
 }
 
-.filters-result__icon{
-  color: var(--dark-blue);
-}
-
 .filters-result__icon i{
+  color: var(--dark-blue);
   font-size: 10px;
 }
 
 .filters-result p{
   margin: 0 0 0 10px;
 }
-
-@media (max-width: 768px)  {
-
-  .filters {
-    width: 90%;
-    margin: auto;
-  }
-  .filters-title {
+@media(max-width: 991px) {
+  .filters-bar__title {
     width: 100%;
   }
-  .filters-box{
-    margin: 10px 20px 10px 0px ;
-  }
 
-  .filters-result {
-    align-items: start;
+  .filter-box{
+  margin-bottom: 16px;
   }
+}
 
+@media (max-width: 767px)  {
+
+  .filter, .filters-bar,  .filters-result {
+    width: var(--mobile-marge);
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

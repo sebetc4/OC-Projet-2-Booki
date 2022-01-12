@@ -1,39 +1,29 @@
-.research-form-box {
- z-index: 2;
+/* Barre de recherchge */
+.research-box {
  position: relative;
- width: 420px;
- height: 51px;
+ width: 380px;
+ height: 50px;
  border: 1px solid var(--light-grey);
  border-radius: 15px;
  display: flex;
- align-items: center;
 }
 
-.research-form-box__map {
-  position: absolute;
+.research-box__map {
+  width: 49px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 50px;
-  left: -1px;
   background-color: var(--light-grey);
   border-radius: 15px 0px 0px 15px;
 }
 
-.fa-map-marker-alt{
-
-  color: var(--text-color);
+.research-box__input {
+  width: 100%;
+  height: 100%;
 }
 
-.research-form-box__input {
-  margin-left: 52px;
-  width: 234px;
-  height: 49px;
-}
-
-.research-form-box__input input{
+.research-box__input input{
   width: 100%;
   height: 100%;
   background: none;
@@ -41,71 +31,55 @@
   font-weight: bold;
 }
 
-.research-form-box__input input:focus{
+.research-box__input input:focus{
   outline:  none;
 }
 
-.research-form-box__button {
-  width: 134px;
-  height: 50px;
+.research-box__button {
   position: absolute;
+  top: -1px;
   right: -1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 130px;
+  height: 50px;
   border: none;
   border-radius: 0px 15px 15px 0px;
-  cursor: pointer; 
   background-color: var(--dark-blue);
+  cursor: pointer; 
 }
 
-.research-form-box__button:hover {
-  background-position: left center;
-}
-
-.research-form-box__button i{
+.research-box__button i{
   color: var(--white);
   display: none; 
 }
 
-.research-form-box__button p{
+.research-box__button-text{
   color: var(--white);
   font-weight: bold;
 }
 
-@media (max-width: 768px)  {
-  .research-title{
-    margin-left: 40px;
-  }
-
-  .research-form-box {
-    width: 90%;
+@media (max-width: 767px)  {
+ 
+  .research-box, .research__title {
+    width: var(--mobile-marge);
     margin-left: auto;
     margin-right: auto;
   }
 
-   .research-form-box__map {
+   .research-box__map {
      width: 15%;
-     height: 100%;
    }
 
-   .research-form-box__input {
-     margin-left: 15%;
-    width: 70%
-  }
-
-  .research-form-box__button {
-    border-radius: 15px;
+  .research-box__button {
     width: 15%;
-    background-image: none;
+    border-radius: 15px;
     background-color: var(--dark-blue);
   }
 
-  .research-form-box__button i{
+  .research-box__button i{
     display: block; 
   }
   
-  .research-form-box__button p{
+  .research-box__button-text{
     display: none;
   }
 }

@@ -1,0 +1,87 @@
+.activity {
+  margin-top: 30px;
+  padding-top: 20px ;
+}
+
+.activity-box {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-column-box {
+  width: 23%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-card {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.activity-card1, .activity-card4 { height: 100%; }
+.activity-card2 { height: 250px; }
+.activity-card3 { height: 170px; }
+.activity-card5, .activity-card6 { height: 210px; }
+
+.activity-card img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.activity-card__title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 5%;
+  background-color: var(--white);
+  color: var(--text-color)
+}
+
+@media(max-width: 991px) {
+
+.activity-box {
+  height: 930px;
+  flex-wrap: wrap;
+}
+
+  .activity-column-box {
+    width: 48%;
+  }
+
+  .column-box3, .column-box4{
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 767px)  {
+
+  .activity {
+    width: var(--mobile-marge);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .activity-box {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+  .activity-column-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .activity-card{
+    margin-bottom: 30px;
+    height: 250px;
+    margin-top: 20px;
+  }
+}

@@ -1,75 +1,285 @@
+/* Section accomodation */
 .accomodation {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.accomodation-all {
-  width: 64%;
-  padding: 10px;
+/* Boxs de sous sections*/
+.accomodation-box {
+  padding-top: 20px;
   border-radius: 25px;
   background-color: var(--light-grey);
+}
+
+.accomodation-box.all-results {
+  width: 64%;
+}
+
+.accomodation-box.most-popular {
+  width: 33%;
+}
+
+/* Tous les élements des boxs */
+.accomodation-box__title, .accomodation-box__cards, .accomodation-box__more{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Elements du box All results */
+.accomodation-box__title.all-results, .accomodation-box__cards.all-results, .accomodation-box__more{
+  width: 93%;
+}
+
+/* Elements du box Mostpopular */
+.accomodation-box__title.most-popular, .accomodation-box__cards.most-popular{
+  width: 90%;
+}
+
+/* Les titres */
+.accomodation-box__title.most-popular {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accomodation-box__title.most-popular i {
+  font-size: 20px;
+}
+
+/* Les boxs Cards */
+.accomodation-box__cards.all-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accomodation-box__cards.most-popular {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cards d'hebergements*/
+/* Border et shadow dans le mains.css */
+.accomodation-card {
+  margin: 15px 0;
+  padding: 5px;
+  background-color: var(--white);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.accomodation-card.all-results {
+  width: 31%;
+  height: 200px;
+}
+
+.accomodation-card.most-popular {
+  height: 150px;
   display: flex;
 }
 
-.accomodation-all-card {
-  margin: 10px 2% 10px 2%;
-  background-color: var(--white);
-  border-radius: 25px;
-  width: 32%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.accomodation-all-card__image img {
-  width: 100%;
-  height: 120px;
-  border-radius: 25px 25px 0 0px;
-  padding: 2%;
+/* Images des cards */
+.accomodation-card__image{
   object-fit: cover;
 }
 
-.accomodation-all-card-infos {
-  height: 66px;
+.accomodation-card__image.all-results {
+  width: 100%;
+  height: 115px;
+  border-radius: 15px 15px 0 0;
+}
 
+.accomodation-card__image.most-popular {
+  width: 40%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Infos des cards */
+.accomodation-card-infos {
   display: flex;
   flex-direction: column;
+}
+
+.accomodation-card-infos.all-results {
+  padding: 3px 5%;
+  height: 70px;
   justify-content: space-between;
 }
 
-.accomodation-all-card-infos__title {
+.accomodation-card-infos.most-popular {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.accomodation-card-infos__price-euro {
+  font-weight: bold;
+}
+
+/* Nom de l'hébergement */
+.accomodation-card-infos__title.all-results {
   margin: 0;
   padding: 0;
 }
 
-.accomodation-all-card-infos__price {
-  margin: 0;
+.accomodation-card-infos__title.most-popular {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+/* Prix de l'hebergement*/
+.accomodation-card-infos__price {
+
   font-size: 13px;
-  padding: 0;
 }
 
-.accomodation-all-card-infos__note {
+.accomodation-card-infos__price.all-results {
+  margin: 0;
+}
+
+.accomodation-card-infos__price.most-popular {
+  margin-top: 10px;
+}
+
+/* Note de l'hébergement */
+.accomodation-card-infos__note {
   margin: 0;
   padding: 0;
 }
 
-.accomodation-all-card-infos__note i {
+.accomodation-card-infos__note.most-popular{
+  position: absolute;
+  margin: 0 0 5px 0;
+  bottom: 8px;
+  justify-self: self-start;
+}
+
+.accomodation-card-infos__note i {
   font-size: 13px;
 }
 
-.accomodation-mostpopular {
-  width: 33%;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: var(--light-grey);
-  display: flex;
+.accomodation-card-infos__note-star--true {
+  color: var(--dark-blue);
+}
+.accomodation-card-infos__note-star--false {
+  color: var(--dark-grey);
 }
 
+@media(max-width: 1260px) {
 
-/* 
-@media(max-width: 992px) {
-  body {
-    background-color: blue;
+  /* Modification Card Hebergements dans la ville */
+  .accomodation-card.all-results {
+    height: 220px;
+  }
+  
+  .accomodation-card-infos.all-results {
+    height: 90px;
+  }
+}
+
+@media(max-width: 991px) {
+
+  /* Modification Card Hebergements dans la ville */
+  .accomodation-card.all-results{
+    width: 48%;
+  }
+
+  .accomodation-card.most-popular {
+    height: 220px;
+    display: block;
+  }
+
+  .accomodation-card__image.most-popular {
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .accomodation-card-infos.most-popular {
+    width: 100%;
+    height: 90px;
+    padding: 3px 5%;
+    justify-content: space-between;
+  }
+
+  .accomodation-card-infos__title.most-popular {
+    margin: 0;
+  }
+
+  .accomodation-card-infos__price.most-popular {
+    margin: 0;
+  }
+
+  .accomodation-card-infos__note.most-popular{
+    position: static;
+    margin: 0;
   }
 } 
-*/
+
+@media (max-width: 767px)  {
+  .accomodation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .accomodation-box__title.all-results, .accomodation-box__cards.all-results, .accomodation-box__more{
+  width: var(--mobile-marge);
+}
+
+  .accomodation-box.most-popular {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .accomodation-box.all-results {
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .accomodation-card.most-popular {
+    height: 150px;
+    display: flex;
+  }
+
+  .accomodation-card.all-results {
+    width: 100%;
+  }
+
+  .accomodation-card__image.most-popular {
+    width: 40%;
+    min-width: 140px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .accomodation-card-infos.most-popular {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 0 5%;
+  }
+
+  .accomodation-card-infos__title.most-popular {
+    margin: 10px 0 0 0;
+  }
+
+  .accomodation-card-infos__note.most-popular{
+    position: absolute;
+    margin: 0 0 5px 0;
+    bottom: 8px;
+    justify-self: self-start;
+  }
+
+  .accomodation-card-infos__price.most-popular {
+    margin-top: 10px;
+  }
+} 
+
+@media (max-width: 380px) {
+  .accomodation-card__image.most-popular {
+    min-width: 0px;
+  }
+}

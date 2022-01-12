@@ -1,48 +1,51 @@
+/* En tête */
 header{
-  width: 95%;
-  margin: auto;
+  width: 94%;
   height: 130px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-logo {
-  margin-left: 20px;
+.header__logo {
   height: 50px;
+  margin-left: 20px;
 }
 
-.header-nav {
+/* Barre de navigation */
+nav {
   height: 100%;
 }
 
-.header-nav-items {
+.header-nav-bar {
+  height: 100%;
+  margin: 0;
   padding: 0;
-  margin: 0 10px 0 0;
-  list-style: none;
   display: flex;
-  height: 100%;
+  list-style: none;
 }
 
-.header-nav-items__item {
-  position: relative;
+.header-nav-bar__item {
   padding: 0 30px;
+  position: relative;
   display: flex;
   align-items: center;
 }
 
-.header-nav-items__item a {
-  text-decoration: none;
+.header-nav-bar__item a {
   color: var(--text-color);
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.header-nav-items__item a:hover {
+.header-nav-bar__item a:hover {
   color: var(--dark-blue);
 }
 
 
-.header-nav-items__item a::after {
+.header-nav-bar__item a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -54,50 +57,36 @@ header{
   transition: opacity 0.3s;
 }
 
-.header-nav-items__item a:hover:after {
+.header-nav-bar__item a:hover:after {
   opacity: 1;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 767px)  {
+
+  header, nav, .header-nav-bar, main {
+    width: 100%;
+  }
+
   header{
-    width: 100%;
     flex-direction: column;
+    margin-top: 20px
   }
 
-  .header-nav {
-    width: 100%;
-  }
-
-  .header-logo {
-    margin: 20px 0 0 0;
-    height: 50px;
-  }
-
-  .header-nav-items {
-    width: 100%;
-  }
-
-  .header-nav-items__item {
+  .header-nav-bar__item {
     padding: 0;
     width: 50%;
     justify-content: center;
   }
 
-  .header-nav-items__item a {
-    padding: 10px 10px;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .header-nav-items__item a::after {
+  .header-nav-bar__item a::after {
     top: auto;
+    bottom: 0;
     background-color: var(--light-grey);
     opacity: 1;
-    bottom: 0;
   }
 
-  .header-nav-items__item a:hover:after {
-    opacity: 1;
+  .header-nav-bar__item a:hover:after {
     background-color: var(--dark-blue);
+    opacity: 1;
   }
 }
