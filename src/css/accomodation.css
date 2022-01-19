@@ -1,13 +1,13 @@
 /* Section accomodation */
 .accomodation {
-  margin-top: 30px;
+  margin-top: 37px;
   display: flex;
   justify-content: space-between;
 }
 
 /* Boxs de sous sections*/
 .accomodation-box {
-  padding-top: 20px;
+  padding-top: 25px;
   border-radius: 25px;
   background-color: var(--light-grey);
 }
@@ -28,17 +28,20 @@
 
 /* Elements du box All results */
 .accomodation-box__title.all-results, .accomodation-box__cards.all-results, .accomodation-box__more{
-  width: 93%;
+  width: 91%;
 }
 
 /* Elements du box Mostpopular */
 .accomodation-box__title.most-popular, .accomodation-box__cards.most-popular{
-  width: 90%;
+  width: 85%;
 }
 
 /* Les titres */
-.accomodation-box__title.most-popular {
+.accomodation-box__title {
   display: flex;
+}
+
+.accomodation-box__title.most-popular {
   align-items: center;
   justify-content: space-between;
 }
@@ -47,6 +50,11 @@
 }
 
 /* Les boxs Cards */
+
+.accomodation-box__cards {
+  margin-top: 10px;
+}
+
 .accomodation-box__cards.all-results {
   display: flex;
   justify-content: space-between;
@@ -61,11 +69,16 @@
 /* Cards d'hebergements*/
 /* Border et shadow dans le mains.css */
 .accomodation-card {
-  margin: 15px 0;
+  margin: 0 0 30px 0;
   padding: 5px;
   background-color: var(--white);
   color: var(--text-color);
   text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.accomodation-card:hover {
+  transform: scale(1.05);
 }
 
 .accomodation-card.all-results {
@@ -163,6 +176,7 @@
 .accomodation-card-infos__note-star--true {
   color: var(--dark-blue);
 }
+
 .accomodation-card-infos__note-star--false {
   color: var(--dark-grey);
 }
@@ -224,9 +238,9 @@
     flex-direction: column-reverse;
   }
 
-  .accomodation-box__title.all-results, .accomodation-box__cards.all-results, .accomodation-box__more{
-  width: var(--mobile-marge);
-}
+  .accomodation-box__title.all-results, .accomodation-box__title.most-popular, .accomodation-box__cards.all-results, .accomodation-box__cards.most-popular, .accomodation-box__more{
+    width: var(--mobile-marge);
+  }
 
   .accomodation-box.most-popular {
     width: 100%;
@@ -237,6 +251,10 @@
     width: 100%;
     border-radius: 0;
     background-color: transparent;
+  }
+
+  .accomodation-card {
+    margin: 0 0 15px 0;
   }
 
   .accomodation-card.most-popular {

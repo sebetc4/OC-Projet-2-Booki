@@ -16,6 +16,10 @@ footer {
   width: 33%;
 }
 
+.footer-column-box__title {
+  font-size: 18px;
+}
+
 .footer-column-box ul {
   padding: 0;
   list-style: none;
@@ -28,7 +32,6 @@ footer {
 .footer-column-item a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 13px;
 }
 
 @media (max-width: 767px)  {

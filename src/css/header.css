@@ -1,7 +1,7 @@
 /* En tête */
 header{
-  width: 94%;
-  height: 130px;
+  width: var(--deskop-marge);
+  height: 120px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -10,8 +10,9 @@ header{
 }
 
 .header__logo {
-  height: 50px;
-  margin-left: 20px;
+  margin-top: 20px;
+  height: 45px;
+  margin-left: 0;
 }
 
 /* Barre de navigation */
@@ -36,6 +37,7 @@ nav {
 
 .header-nav-bar__item a {
   color: var(--text-color);
+  font-weight: 400;
   text-decoration: none;
   transition: color 0.3s;
 }
