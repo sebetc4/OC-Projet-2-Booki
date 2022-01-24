@@ -38,6 +38,7 @@
 
 /* Les titres */
 .accomodation-box__title {
+  height: 62px;
   display: flex;
 }
 
@@ -46,7 +47,8 @@
   justify-content: space-between;
 }
 .accomodation-box__title.most-popular i {
-  font-size: 20px;
+  margin-left: 10px;
+  font-size: 22px;
 }
 
 /* Les boxs Cards */
@@ -67,7 +69,7 @@
 }
 
 /* Cards d'hebergements*/
-/* Border et shadow dans le mains.css */
+/* Border et shadow dans le app.css */
 .accomodation-card {
   margin: 0 0 30px 0;
   padding: 5px;

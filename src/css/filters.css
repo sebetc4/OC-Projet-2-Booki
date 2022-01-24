@@ -97,6 +97,10 @@
   .filter-box{
   margin-bottom: 16px;
   }
+
+  .filters-result {
+    margin-top: 19px;
+  }
 }
 
 @media (max-width: 767px)  {

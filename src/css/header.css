@@ -89,6 +89,5 @@ nav {
 
   .header-nav-bar__item a:hover:after {
     background-color: var(--dark-blue);
-    opacity: 1;
   }
 }
