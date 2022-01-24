@@ -12,7 +12,6 @@ header{
 .header__logo {
   margin-top: 20px;
   height: 45px;
-  margin-left: 0;
 }
 
 /* Barre de navigation */
@@ -59,7 +58,7 @@ nav {
   transition: opacity 0.3s;
 }
 
-.header-nav-bar__item a:hover:after {
+.header-nav-bar__item a:hover::after {
   opacity: 1;
 }
 
@@ -87,7 +86,7 @@ nav {
     opacity: 1;
   }
 
-  .header-nav-bar__item a:hover:after {
+  .header-nav-bar__item a:hover::after {
     background-color: var(--dark-blue);
   }
 }

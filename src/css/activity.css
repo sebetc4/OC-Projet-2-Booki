@@ -52,17 +52,13 @@
 
 @media(max-width: 991px) {
 
-.activity-box {
-  height: 930px;
-  flex-wrap: wrap;
-}
+  .activity-box {
+    height: 930px;
+    flex-wrap: wrap;
+  }
 
   .activity-column-box {
     width: 48%;
-  }
-
-  .column-box3, .column-box4{
-    align-self: flex-end;
   }
 }
 
@@ -77,7 +73,6 @@
 
   .activity-box {
     height: auto;
-    flex-wrap: wrap;
   }
   
   .activity-column-box {

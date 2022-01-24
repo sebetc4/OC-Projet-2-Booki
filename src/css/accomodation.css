@@ -13,11 +13,11 @@
 }
 
 .accomodation-box.all-results {
-  width: 64%;
+  width: 65%;
 }
 
 .accomodation-box.most-popular {
-  width: 33%;
+  width: 32%;
 }
 
 /* Tous les élements des boxs */
@@ -183,7 +183,7 @@
   color: var(--dark-grey);
 }
 
-@media(max-width: 1260px) {
+@media(max-width: 1240px) {
 
   /* Modification Card Hebergements dans la ville */
   .accomodation-card.all-results {
